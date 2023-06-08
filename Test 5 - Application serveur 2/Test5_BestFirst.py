@@ -7,10 +7,8 @@ import curses # pip install windows-curses
 from curses import ascii
 
 # Entrée du fichier grid
-#while not os.path.isfile(input_path := input('Entrer le chemin vers le fichier grid: \n> ').strip('"')): 
-#  print('Chemin du fichier invalide, veuillez réessayer.')
-
-input_path = os.path.abspath("D:\Bureau\Test Sysnav\data\grids\grid3.txt")
+while not os.path.isfile(input_path := input('Entrer le chemin vers le fichier grid: \n> ').strip('"')): 
+print('Chemin du fichier invalide, veuillez réessayer.')
 
 """
 Initialisation des variables globales
